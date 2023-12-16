@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box - Model</title>
+    <style>
+        .box {
+            background-color: aquamarine;
+        }
+
+        .box1 {
+            color: red;
+        }
+
+        .box2 {
+            color: magenta
+        }
+        div{
+            border: 8px solid red;
+            width: 160px;
+            height: 80px;
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        .container1{
+            box-sizing: content-box;
+        }
+        .container2{
+            box-sizing: border-box;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="box box1">This is my box1.</span>
+    <!-- <div class="box box2"> Hey there box2.</div> -->
+    <div class="container1">This box is content-box.</div>
+    <br>
+    <div class="container2">This had box-sizing:boder-box</div>
+
+</body>
+
+</html>

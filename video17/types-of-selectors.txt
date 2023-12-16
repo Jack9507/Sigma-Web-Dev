@@ -1,0 +1,17 @@
+In CSS (Cascading Style Sheets), selectors are patterns used to select the HTML elements you want to style. There are various types of selectors in CSS, each serving different purposes. Here are some of the most common types:
+
+1 Element Selector: Selects elements based on their element type. For example, to select all <p> elements, you would use the selector p.
+
+2 ID Selector: Selects an element based on its unique ID attribute. It is denoted by the # symbol followed by the ID value. For example, to select an element with the ID "myElement", you would use the selector #myElement.
+
+3 Class Selector: Selects elements based on their class attribute. It is denoted by the . (dot) symbol followed by the class name. For example, to select elements with the class "myClass", you would use the selector .myClass.
+
+4 Attribute Selector: Selects elements based on their attribute values. For example, you can select elements with a specific attribute value like [type="text"] or select elements with attributes that start with, end with, or contain certain values.
+
+5 Descendant Selector: Selects an element that is a descendant of another specified element. It is denoted by a space between two selectors. For example, div p selects all <p> elements that are descendants of a <div> element.
+
+6 Child Selector: Selects an element that is a direct child of another element. It is denoted by the > symbol. For example, div > p selects all <p> elements that are direct children of a <div> element.
+
+7 Adjacent Sibling Selector: Selects an element that is the next sibling of another element. It is denoted by the + symbol. For example, h2 + p selects the <p> element that directly follows an <h2> element.
+
+8 General Sibling Selector: Selects elements that are siblings of an element and come after it. It is denoted by the ~ symbol. For example, h2 ~ p selects all <p> elements that are siblings of an <h2> element and come after it.

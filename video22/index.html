@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units in CSS -> px,rem,em,vh,vw</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            /* width: 100vw; -> takes the full width according to your device width*/
+            width: 80vw;
+            margin: auto;
+            /* -> used to center block elements */
+            height: 20vh;
+            background-color: rgb(170, 234, 213);
+        }
+
+        .notes {
+            border: 5px solid grey;
+            width: 80vw;
+            /* box-sizing: border-box; */
+            /* height: 60vh; */
+            min-height: 60vh;
+            box-sizing: border-box;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: rgb(154, 150, 150)
+        }
+
+        .notes p {
+            /* font-size: 1.5em; -> 1.5 times the size inherited from its parent */
+            font-size: 2rem;
+            /* -> 2 times the size of root element i.e twice the size of <html> */
+            border: 2px solid red;
+            width: 50%;
+
+        }
+
+        ol {
+            margin-left: 25px;
+        }
+        .container {
+            border: 3px solid rgb(20, 21, 21);
+            width: 80vw;
+            /* width: 50vmin; */
+            box-sizing: border-box;
+            margin: auto;
+            background-color: rgb(58, 235, 176);
+            height: 10vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+        This box is a block element.
+    </div>
+
+
+    <div class="notes">
+        <h2>Notes from the video</h2>
+        <ol type="i">
+            <li>px -> pixels is a basic unit. My 2k resolution has 2560x1600 = 40,96,000 pixels in monitor.</li>
+            <li>In 2560x1600 -> monitor width is 2560 px and height is 1600 px</li>
+            <li>When using universal selector to do margin and padding zero then make sure to give left margin for
+                &lt;ol&gt; & &lt;ul&gt;</li>
+            <li>margin:auto is used to center a block element.</li>
+            <li>1.5em -> means 1.5 times of the inherited size. </li>
+            <li>2rem -> means 2 times of the root element size.</li>
+            <li>vmin -> 1% of the viewport's smaller dimension. ex. for laptops vmin is height & for mobile its width.</li>
+            <li>vmax -> 1% of the viewport's larger dimension.</li>
+            <li>Use min-height to make CSS BOX height Dynamic. Box will adapt accordingly to the content present.</li>
+            <li>Use min-width to make CSS BOX width Dynamic. Box will adapt accordingly to the content present.</li>
+        </ol>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique soluta porro ab debitis esse eos nobis sapiente doloribus labore mollitia harum nihil explicabo rem facere eveniet neque praesentium ipsam exercitationem expedita quibusdam, odio error quaerat laborum autem! Officiis voluptatibus deleniti quia ipsa laboriosam laudantium repudiandae quo repellendus quisquam modi accusantium aperiam veritatis necessitatibus dolorem praesentium beatae neque, rem hic voluptatum facere, dicta corrupti doloremque a? Temporibus expedita earum quos assumenda, aliquam dolor non ab, similique porro cumque et pariatur, tempore hic. Dignissimos consequuntur saepe numquam voluptates veniam blanditiis nostrum quaerat inventore laudantium, voluptate ut iure illo, mollitia molestiae voluptatum provident. Quod praesentium hic quibusdam non ab voluptatibus suscipit nisi? Laborum placeat facilis optio illo, aut doloremque odio tenetur exercitationem nulla debitis saepe et ipsa inventore sed molestiae voluptatum vero architecto quidem fuga? Ducimus quasi doloribus unde molestiae, veritatis ab magni fugiat vitae, doloremque laboriosam deserunt assumenda voluptate rem aspernatur inventore aliquam animi, amet perspiciatis sunt ullam possimus? Aliquid magnam sequi eveniet quas ut id placeat, iste accusantium nemo consequuntur laborum sunt quae reprehenderit neque eligendi voluptatem similique aspernatur. Consequatur voluptatibus neque est tenetur assumenda veniam quidem minus ducimus laboriosam hic sed ut possimus magnam, maiores aspernatur dolor voluptas sit eius recusandae aut aliquid id porro dolorem dignissimos. Ipsam, consequatur dolorem accusamus exercitationem, placeat vitae tenetur cumque et iusto incidunt quisquam perspiciatis earum nobis quo, eum esse aliquid. Esse natus quam dolor officia, earum ut iste autem asperiores ducimus id error aperiam alias harum numquam obcaecati beatae quaerat animi quod maiores! Enim repudiandae molestias libero quia minima perspiciatis. Voluptatibus eligendi cupiditate corporis perferendis expedita cumque, accusamus quidem dicta non ea adipisci doloremque quam dolores, sapiente placeat quisquam inventore quis quia reprehenderit atque dolorum. Voluptatem magnam at dolores libero laboriosam tenetur. Quaerat iste magni laboriosam iusto dolorem, qui, ipsa voluptas atque a consectetur tempora doloribus reiciendis. Fuga libero sunt animi mollitia facere incidunt error numquam quos nihil asperiores rem placeat, culpa non temporibus eos ipsam natus, earum laborum qui alias et! Expedita facere placeat saepe ad non quo, eos quaerat! Aperiam vitae neque numquam molestias nulla asperiores a repellat dicta hic blanditiis tenetur, id sunt ratione minima maxime quae aliquam sequi ea. Laborum delectus hic quas quam! Tempore explicabo illum asperiores sequi rerum porro id nulla omnis velit iusto iste, suscipit architecto beatae sint temporibus, sunt similique veniam, ad impedit inventore animi nostrum quam? Consequatur, asperiores! Saepe sed ipsam aliquid fugit eaque eligendi doloribus, sapiente, minima assumenda, laborum quos repellendus! Minima quas minus beatae quos nam iusto iste repellat velit cupiditate dolor quod id fugiat error fuga aliquam, in culpa ipsum temporibus quae consectetur perferendis doloremque voluptatem amet ratione? Sint illum beatae corporis ab accusamus ut labore consectetur veniam excepturi fuga, sunt nostrum perspiciatis officiis, quam modi adipisci! Mollitia maxime, nam consectetur corrupti sunt id, quia impedit voluptatum nulla quod molestiae in ad animi qui ipsa, praesentium officia nisi. Assumenda corporis repellat sunt aspernatur tempore molestiae, beatae nisi totam officiis molestias ullam illum dolores, reiciendis rem maiores iusto? Quidem repudiandae pariatur praesentium doloremque, voluptate, nam sequi laudantium quis est quia iste maiores soluta dolorem consectetur officia. Eum aliquid animi quisquam dignissimos aperiam, sunt similique rerum error. Quam alias, eos dignissimos vel veritatis impedit corporis. Accusamus cupiditate sit fuga ipsa voluptatum omnis doloremque in facilis possimus doloribus ipsum, maiores minus deleniti, ex iusto harum. Dolorum sapiente, aperiam illo praesentium aut ex reiciendis vel possimus nesciunt blanditiis distinctio voluptates provident et dolor iste ad ipsum quia corrupti commodi earum, saepe impedit quos ullam! Facilis odio molestiae eaque, quasi nobis nesciunt nisi tempore, adipisci vitae repellendus, debitis maxime. Hic voluptates exercitationem dicta quod cumque mollitia veritatis cum animi obcaecati nemo et, eius, unde consectetur commodi aut aspernatur voluptate impedit fugit vitae saepe sapiente voluptatum sit. Ipsa, expedita cum aliquid quae obcaecati et vitae, asperiores libero mollitia repellendus corporis sequi voluptates placeat, fuga sint labore minima repudiandae. Dolore numquam labore excepturi. Eaque asperiores molestias voluptas porro in nulla ullam consequatur maxime itaque quos commodi modi tempora laborum, laboriosam, totam assumenda mollitia necessitatibus obcaecati maiores fugit saepe aliquam. Eveniet doloremque fugiat harum? Assumenda consectetur hic maxime nobis at, numquam illum quod reprehenderit laborum voluptates iusto repudiandae molestias ad amet, neque ducimus totam ipsa corrupti vitae tenetur impedit veniam dicta ipsam repellendus. Quasi a, corporis culpa eligendi placeat necessitatibus repellendus dicta tenetur alias reprehenderit itaque, consequuntur, odio unde dolorum maxime repellat ad facere veniam mollitia velit. Minima officiis impedit blanditiis ad nobis laborum velit alias numquam vitae tenetur itaque, ea quo dignissimos reprehenderit earum soluta voluptatem modi qui doloremque? Excepturi in ab, necessitatibus minima earum tenetur saepe, deleniti dolorem nobis est, eos quos pariatur nemo? Aliquid debitis veritatis dolor sunt vero et praesentium fugit aperiam doloremque consequatur a velit est obcaecati aut minus voluptate harum, blanditiis voluptatem quo sequi excepturi. Quisquam, dolorem voluptatum architecto officiis neque fugit eum, quidem error quaerat tempore velit quia tenetur, accusamus eveniet. Odit eaque possimus tempora voluptates, est quia aspernatur assumenda magni pariatur. Vitae alias nam, ducimus blanditiis voluptatibus, error hic est impedit eligendi nesciunt maiores eius voluptatem ratione animi aspernatur facilis perspiciatis enim distinctio quibusdam vel inventore! Nulla facilis adipisci, cumque minima minus, enim placeat ipsam quam illo id omnis. Ipsa sunt recusandae totam ut dolorem, deserunt accusamus provident debitis ipsam similique blanditiis quaerat assumenda nemo officia est cumque amet! Exercitationem, laboriosam dicta enim autem blanditiis laborum doloremque quae, at magni ducimus voluptatibus alias qui. At explicabo illum quod ducimus commodi. Facilis repudiandae incidunt officiis corporis. Unde nobis illum dolore delectus ullam nostrum cum tenetur eveniet. Tempora cumque temporibus quo minus sint officiis suscipit delectus cupiditate, iusto in fugit voluptatibus odit. Officiis, asperiores facere culpa quibusdam veniam veritatis, iure obcaecati perspiciatis, quam itaque beatae. Expedita, veniam omnis dolorum repellat quis odit iste at blanditiis reiciendis. Voluptatem quas commodi sit maxime molestiae in nemo iusto, debitis non unde! Aliquid nobis quod ipsum ratione unde, veritatis, ea laborum beatae recusandae repudiandae quae quidem explicabo tempora ipsa omnis vero sunt doloremque ab maiores quas maxime sit modi. Itaque id cum voluptate, beatae provident fugiat.
+        </p>
+        
+
+
+    </div>
+
+    <div class="container">
+        Hi, This div is just to demonstrate vmin & vmax size units.
+    </div>
+
+</body>
+
+</html>
