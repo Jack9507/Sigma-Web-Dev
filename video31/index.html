@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Media Querry</title>
+    <style>
+        /* syntax for media querry -> 
+        @media not|only mediatype and (expressions) {
+            CSS-code:
+        } */
+        body {
+            background-color: rgb(208, 244, 81);
+        }
+
+        @media only screen and (max-width: 490px) {
+            body {
+                background-color: aqua;
+            }
+        }
+
+
+        .box {
+            width: 555px;
+            height: 155px;
+            background-color: brown;
+            padding: 3px;
+            margin: 4px;
+            /* overflow-y: hidden; */
+            overflow: auto;
+            
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+
+        @media only screen and (max-width: 310px) {
+            .boxes {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 170px;
+                height: 130px;
+                background-color: blueviolet;
+
+            }
+        }
+
+        @media only screen and (orientation: portrait) {
+            .box {
+                border: 3px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Hello I am a container.
+    </div>
+    <div class="boxes">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem animi quod quidem autem iste obcaecati deleniti et, omnis ratione distinctio cupiditate aperiam magnam ad temporibus quisquam veritatis nulla, culpa ea quae ducimus facilis accusamus facere. Quis nemo quos nam libero sapiente ad, assumenda aspernatur minima porro! Ut architecto illo, ipsum voluptas tenetur doloremque veritatis?
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+</body>
+
+</html>

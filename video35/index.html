@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box:nth-child(3) {
+            background-color: aquamarine;
+        }
+
+        .boxes * {
+            border: 2px solid black;
+        }
+
+        [data-color="primary"] {
+            padding-top: 45px;
+        }
+
+        .box:nth-child(even) {
+            color: rgb(36, 44, 197);
+            font-size: 30px;
+        }
+
+        .box:nth-last-child(1) {
+            background-color: #dad855;
+        }
+
+        /* IMP: Insert elements in main content dynamically with CSS through below sudo elements: */
+        .boxes::before {
+            content: "Jerry is adding Dynamic content through CSS.";
+            color: blueviolet;
+        }
+
+        .boxes::after {
+            content: "Sigma Web Dev is awesome.";
+            color: rgb(49, 132, 132);
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: rgb(31, 11, 163);
+            font-size: 30px;
+        }
+
+        input{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: rgb(146, 55, 164);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">Hey, I am first box.</div>
+        <div class="box">Hey, I am a box.</div>
+        <div class="box">Hey, I am a box.</div>
+    </div>
+
+    <div class="form">
+        <input type="text", placeholder="Enter your name here.">
+    </div>
+
+
+</body>
+
+</html>

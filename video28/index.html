@@ -18,10 +18,14 @@
         }
         .box1{
             background-color: aquamarine;
+            /* position: sticky;
+            top: 0px;
+            height: 50px; */
+            position: absolute;
+            top: 0px;
+            right: 0px;
             /* position: relative; */
             /* z-index: 1; */
-            /* position: absolute; */
-            /* top:0px; */
         }
         .box2{
             background-color: beige;
@@ -31,7 +35,9 @@
             left: 20px; */
         }
         .box3{
-            background-color:antiquewhite;
+            background-color:rgb(170, 232, 38);
+            /* position: fixed; */
+            /* z-index: 2; */
         }
         .box4{
             background-color: cadetblue;
@@ -40,6 +46,14 @@
             border: 4px solid purple;
             padding: 20px;
             margin: 25px;
+            /* position: absolute;3 */
+
+            /* Exception:  transform, filter & perspective porperties can also make an element appear as positioned. */
+            /* transform: translate(0); */
+            /* filter: contrast(200%); */
+            /* perspective: 2em; */
+
+            
         }
     </style>
 </head>

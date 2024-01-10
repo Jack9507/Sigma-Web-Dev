@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Variables</title>
+    <style>
+
+        /* define global variables in root section in CSS. You can overwright them in specific elements while targetting them.*/
+        :root{
+            --color: rgb(71, 223, 96);
+            --seccolor:rgb(128, 182, 204);
+            --defpad: 24px;
+            --defopac: 0.5;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+
+        .container{
+            background-color: var(--seccolor);
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+            margin: 10px;
+        }
+        
+        ul {
+            display: flex;
+        }
+
+        ul li:first-child{
+         --color: rgb(227, 124, 124);
+         background-color: var(--color);
+         opacity: var(--defopac);
+        }
+        ul li:nth-child(n+3){
+            --color: rgb(178, 79, 235);
+            background-color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Main</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, porro temporibus distinctio, similique possimus ullam tenetur magni hic animi sint expedita obcaecati voluptas consequuntur repellendus fugiat! Vero labore maxime maiores ducimus, numquam unde nam expedita quis! Modi voluptatibus exercitationem iure ad tempora tempore rerum dolorem.
+    </div>
+    
+</body>
+</html>
